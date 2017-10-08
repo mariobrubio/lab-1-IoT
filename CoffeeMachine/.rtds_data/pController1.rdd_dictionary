@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="2" language="sdl" diagramType="prcs">
+<Signal id="SIG1" name="sCoffee">
+<UsingSymbols>
+<SymbolReference symbolId="SYM16" usingKind="input"/>
+<SymbolReference symbolId="SYM64" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG10" name="sCupOfTea">
+<UsingSymbols>
+<SymbolReference symbolId="SYM53" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG11" name="sCupOfCoffee">
+<UsingSymbols>
+<SymbolReference symbolId="SYM30" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG12" name="sMoreCoins">
+<UsingSymbols>
+<SymbolReference symbolId="SYM65" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG13" name="sCoin">
+<UsingSymbols>
+<SymbolReference symbolId="SYM68" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG2" name="sFillWater">
+<UsingSymbols>
+<SymbolReference symbolId="SYM17" usingKind="output"/>
+<SymbolReference symbolId="SYM57" usingKind="output"/>
+<SymbolReference symbolId="SYM37" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG3" name="sTea">
+<UsingSymbols>
+<SymbolReference symbolId="SYM56" usingKind="input"/>
+<SymbolReference symbolId="SYM36" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG4" name="sChange">
+<UsingSymbols>
+<SymbolReference symbolId="SYM74" usingKind="output"/>
+<SymbolReference symbolId="SYM63" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG5" name="sWaterOk">
+<UsingSymbols>
+<SymbolReference symbolId="SYM20" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG6" name="sHeatWater">
+<UsingSymbols>
+<SymbolReference symbolId="SYM46" usingKind="output"/>
+<SymbolReference symbolId="SYM25" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG7" name="sFillCoffee">
+<UsingSymbols>
+<SymbolReference symbolId="SYM21" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG8" name="sCoffeeOk">
+<UsingSymbols>
+<SymbolReference symbolId="SYM24" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG9" name="sWarm">
+<UsingSymbols>
+<SymbolReference symbolId="SYM28" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Item id="ITEM1" type="process" name="pController1" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Body>
+<SentSignals>
+<SignalReference id="SIG10"/>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG11"/>
+<SignalReference id="SIG7"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG12"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG8"/>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG13"/>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG9"/>
+<SignalReference id="SIG5"/>
+</ReceivedSignals>
+</Body>
+</Item>
+<Item id="ITEM10" type="variable" name="NbrOfTea" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM5"/>
+<SymbolReference symbolId="SYM54"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM11" type="variable" name="NICKEL" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM33"/>
+<SymbolReference symbolId="SYM63"/>
+<SymbolReference symbolId="SYM70"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM12" type="variable" name="DIME" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM10"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM13" type="variable" name="NbrOfCoffee" parentId="ITEM1" scope="none" variableTypeName="Natural" variableTypeId="ITEM2" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM1"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM14" type="variable" name="UserChoice" parentId="ITEM1" scope="none" variableTypeName="Products" variableTypeId="ITEM9" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM1"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM15" type="variable" name="Value" parentId="ITEM1" scope="none" variableTypeName="CoinValues" variableTypeId="ITEM8" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM1"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM16" type="variable" name="NbrOfTea" parentId="ITEM1" scope="none" variableTypeName="Natural" variableTypeId="ITEM2" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM1"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM17" type="state" name="Idle" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM6"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM45"/>
+<SymbolReference symbolId="SYM32"/>
+<SymbolReference symbolId="SYM6"/>
+<SymbolReference symbolId="SYM55"/>
+<SymbolReference symbolId="SYM52"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM18" type="state" name="PaidTen" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM15"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM72"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM19" type="state" name="FillingWater" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM19"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM59"/>
+<SymbolReference symbolId="SYM40"/>
+<SymbolReference symbolId="SYM18"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM2" type="type" name="Natural" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM1"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM20" type="state" name="Warming" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM27"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM47"/>
+<SymbolReference symbolId="SYM26"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM21" type="state" name="FillingCoffee" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM23"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM22"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM22" type="state" name="PaidFive" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM35"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM75"/>
+<SymbolReference symbolId="SYM67"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM3" type="variable" name="Value" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM74"/>
+<SymbolReference symbolId="SYM9"/>
+<SymbolReference symbolId="SYM7"/>
+<SymbolReference symbolId="SYM68"/>
+<SymbolReference symbolId="SYM69"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM4" type="variable" name="UserChoice" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM39"/>
+<SymbolReference symbolId="SYM38"/>
+<SymbolReference symbolId="SYM58"/>
+<SymbolReference symbolId="SYM48"/>
+<SymbolReference symbolId="SYM41"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM5" type="variable" name="TEA" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM39"/>
+<SymbolReference symbolId="SYM50"/>
+<SymbolReference symbolId="SYM58"/>
+<SymbolReference symbolId="SYM43"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM6" type="variable" name="COFFEE" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM38"/>
+<SymbolReference symbolId="SYM49"/>
+<SymbolReference symbolId="SYM42"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM7" type="variable" name="NbrOfCoffee" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM31"/>
+<SymbolReference symbolId="SYM5"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM8" type="type" name="CoinValues" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM1"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM9" type="type" name="Products" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM1"/>
+</UsingSymbols>
+</Item>
+</DictionaryObjects>

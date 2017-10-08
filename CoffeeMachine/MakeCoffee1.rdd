@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="_LIFELINE_3 _LIFELINE_5 _LIFELINE_6"/>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="PROCESS_START" color="-" text="RTDS_Env
+" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="PROCESS_START" color="-" text="pController1
+" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="PROCESS_START" color="-" text="pHardware1
+" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_SEND" color="#000000" text="sCoin(10)
+" identifier="_LINK_6"/>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_RECEIVE" color="#000000" text="sCoin(10)
+" identifier="_LINK_6"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_SEND" color="#000000" text="sCoffee
+" identifier="_LINK_13"/>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_RECEIVE" color="#000000" text="sCoffee
+" identifier="_LINK_13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_SEND" color="#000000" text="sFillWater
+" identifier="_LINK_18"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_RECEIVE" color="#000000" text="sFillWater
+" identifier="_LINK_18"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_SEND" color="#000000" text="sWaterOk
+" identifier="_LINK_23"/>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_RECEIVE" color="#000000" text="sWaterOk
+" identifier="_LINK_23"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_SEND" color="#000000" text="sFillCoffee
+" identifier="_LINK_27"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_RECEIVE" color="#000000" text="sFillCoffee
+" identifier="_LINK_27"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_SEND" color="#000000" text="sCoffeeOk
+" identifier="_LINK_30"/>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_RECEIVE" color="#000000" text="sCoffeeOk
+" identifier="_LINK_30"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_SEND" color="#000000" text="sHeatWater
+" identifier="_LINK_33"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_RECEIVE" color="#000000" text="sHeatWater
+" identifier="_LINK_33"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="TIME_CONSTRAINT_START" color="black" text="10
+" identifier="_LIFELINE_6/2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_SEND" color="#000000" text="sWarm
+" identifier="_LINK_36"/>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_RECEIVE" color="#000000" text="sWarm
+" identifier="_LINK_36"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="TIME_CONSTRAINT_END" color="black" identifier="_LIFELINE_6/2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_SEND" color="#000000" text="sCupOfCoffee
+" identifier="_LINK_39"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="sCupOfCoffee
+" identifier="_LINK_39"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE"/>
+</MscDiagram>

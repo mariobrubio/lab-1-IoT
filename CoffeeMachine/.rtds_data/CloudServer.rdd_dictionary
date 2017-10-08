@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="2" language="none" diagramType="blk">
+<Signal id="SIG1" name="sSell">
+</Signal>
+<Signal id="SIG2" name="sSpent">
+</Signal>
+<Item id="ITEM1" type="block" name="CloudServer" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB1"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW2" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK19" isFrom="TRUE"/>
+<Connections>
+<Connection name="cVending2Cloud"/>
+</Connections>
+<SentSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+</SentSignals>
+</SignalWindow>
+<Channel name="cVending2Cloud" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW1"/>
+</Item>
+<Item id="ITEM2" type="process" name="pCloud" parentId="ITEM1" scope="none" minInstances="1" maxInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW1" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK19" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+</DictionaryObjects>

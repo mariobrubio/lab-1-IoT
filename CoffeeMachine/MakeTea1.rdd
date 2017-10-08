@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="_LIFELINE_5 _LIFELINE_6 _LIFELINE_7"/>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="PROCESS_START" color="-" text="RTDS_Env
+" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="PROCESS_START" color="-" text="pController1
+" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="PROCESS_START" color="-" text="pHardware1
+" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_SEND" color="#000000" text="sCoin(5)
+" identifier="_LINK_44"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_RECEIVE" color="#000000" text="sCoin(5)
+" identifier="_LINK_44"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_SEND" color="#000000" text="sTea
+" identifier="_LINK_49"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_RECEIVE" color="#000000" text="sTea
+" identifier="_LINK_49"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_SEND" color="#000000" text="sFillWater
+" identifier="_LINK_54"/>
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_RECEIVE" color="#000000" text="sFillWater
+" identifier="_LINK_54"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_SEND" color="#000000" text="sWaterOk
+" identifier="_LINK_58"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_RECEIVE" color="#000000" text="sWaterOk
+" identifier="_LINK_58"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_SEND" color="#000000" text="sHeatWater
+" identifier="_LINK_63"/>
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_RECEIVE" color="#000000" text="sHeatWater
+" identifier="_LINK_63"/>
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="TIME_CONSTRAINT_START" color="black" text="10
+" identifier="_LIFELINE_7/1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_SEND" color="#000000" text="sWarm
+" identifier="_LINK_66"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_RECEIVE" color="#000000" text="sWarm
+" identifier="_LINK_66"/>
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="TIME_CONSTRAINT_END" color="black" identifier="_LIFELINE_7/1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_SEND" color="#000000" text="sCupOfTea
+" identifier="_LINK_71"/>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="MESSAGE_RECEIVE" color="#000000" text="sCupOfTea
+" identifier="_LINK_71"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE"/>
+</MscDiagram>

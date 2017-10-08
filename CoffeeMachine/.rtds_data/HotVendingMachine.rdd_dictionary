@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="2" language="none" diagramType="blk">
+<Signal id="SIG1" name="sSell">
+</Signal>
+<Signal id="SIG10" name="sCupOfTea">
+</Signal>
+<Signal id="SIG11" name="sChange">
+</Signal>
+<Signal id="SIG12" name="sMoreCoins">
+</Signal>
+<Signal id="SIG13" name="sCoin">
+</Signal>
+<Signal id="SIG14" name="sCoffee">
+</Signal>
+<Signal id="SIG15" name="sTea">
+</Signal>
+<Signal id="SIG2" name="sSpent">
+</Signal>
+<Signal id="SIG3" name="sWaterOk">
+</Signal>
+<Signal id="SIG4" name="sCoffeeOk">
+</Signal>
+<Signal id="SIG5" name="sWarm">
+</Signal>
+<Signal id="SIG6" name="sFillWater">
+</Signal>
+<Signal id="SIG7" name="sFillCoffee">
+</Signal>
+<Signal id="SIG8" name="sHeatWater">
+</Signal>
+<Signal id="SIG9" name="sCupOfCoffee">
+</Signal>
+<Item id="ITEM1" type="block" name="HotVendingMachine" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB1"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW5" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK12" isFrom="TRUE"/>
+<Connections>
+<Connection name="cVending2Cloud"/>
+</Connections>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW6" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK3" isFrom="TRUE"/>
+<Connections>
+<Connection name="cEnvController"/>
+</Connections>
+<SentSignals>
+<SignalReference id="SIG13"/>
+<SignalReference id="SIG14"/>
+<SignalReference id="SIG15"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG9"/>
+<SignalReference id="SIG10"/>
+<SignalReference id="SIG11"/>
+<SignalReference id="SIG12"/>
+</ReceivedSignals>
+</SignalWindow>
+<Channel name="cVending2Cloud" fromSignalWindow="SIGWDW5" toSignalWindow="SIGWDW1"/>
+<Channel name="cControllerHardware" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW2"/>
+<Channel name="cEnvController2" fromSignalWindow="SIGWDW6" toSignalWindow="SIGWDW3"/>
+</Item>
+<Item id="ITEM2" type="process" name="pHardware1" parentId="ITEM1" scope="none" minInstances="1" maxInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW1" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK12" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+</SentSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK10" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG7"/>
+<SignalReference id="SIG8"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM3" type="process" name="pController1" parentId="ITEM1" scope="none" minInstances="1" maxInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB3"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB3"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW4" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK10" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG7"/>
+<SignalReference id="SIG8"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK3" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG9"/>
+<SignalReference id="SIG10"/>
+<SignalReference id="SIG11"/>
+<SignalReference id="SIG12"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG13"/>
+<SignalReference id="SIG14"/>
+<SignalReference id="SIG15"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+</DictionaryObjects>

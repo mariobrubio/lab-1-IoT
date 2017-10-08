@@ -1,0 +1,15 @@
+Ä}q(UversionqU5.1.1qUobjectq]q((cpragmadev.main.business.l11l11l1l1111_opy_
+l111l11ll11l1ll_opy_
+qoq}q(U(_l111l11ll11l1ll_opy___11111lllll11_opy_q	(hoq
+}q(h	NUtextqUê/*NICKEL=5 cents; DIME=10 cents*/
+NEWTYPE CoinValues
+  LITERALS NICKEL, DIME;
+ENDNEWTYPE;
+
+NEWTYPE Products
+  LITERALS COFFEE, TEA;
+ENDNEWTYPE;
+qU
+identifierqNUtypeqUdatadeclqUchildrenq]q((hoq}q(h	h
+hU0CoinValues LITERALS NICKEL , DIME ; ENDNEWTYPE ;qhU1:8qhUtypedeclqh]q((hoq}q(h	(hoq}q(h	hhhhhhhhhubhU
+CoinValuesqhU1:8qhUtypenameqh]q ub(hoq!}q"(h	hhUNICKEL , DIME ;q#hU2:9q$hUliteralsdeclq%h]q&((hoq'}q((h	h!hUNICKELq)hU2:9q*hUliteraldeclq+h]q,(hoq-}q.(h	h'hUNICKELq/hU2:9q0hUliteralnameq1h]q2ubaub(hoq3}q4(h	h!hUDIMEq5hU2:17q6hUliteraldeclq7h]q8(hoq9}q:(h	h3hUDIMEq;hU2:17q<hUliteralnameq=h]q>ubaubeubeubheubhU-Products LITERALS COFFEE , TEA ; ENDNEWTYPE ;q?hU5:8q@hUtypedeclqAh]qB((hoqC}qD(h	(hoqE}qF(h	hhh?hh@hhAhhBubhUProductsqGhU5:8qHhUtypenameqIh]qJub(hoqK}qL(h	hEhUCOFFEE , TEA ;qMhU6:9qNhUliteralsdeclqOh]qP((hoqQ}qR(h	hKhUCOFFEEqShU6:9qThUliteraldeclqUh]qV(hoqW}qX(h	hQhUCOFFEEqYhU6:9qZhUliteralnameq[h]q\ubaub(hoq]}q^(h	hKhUTEAq_hU6:17q`hUliteraldeclqah]qb(hoqc}qd(h	h]hUTEAqehU6:17qfhUliteralnameqgh]qhubaubeubeubheu.

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="LIFELINEID_1 LIFELINEID_2 LIFELINEID_3"/>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="PROCESS_START" color="#000000" text="pController1
+(1)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="PROCESS_START" color="#000000" text="pHardware1
+(2)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="PROCESS_START" color="#000000" text="RTDS_Env
+(-1)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM6" identifier="COND1" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND1" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM6"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM4" identifier="COND2" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND2" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="#000000" text="sCoin(|{param1|=DIME|})" identifier="MSG1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM7" identifier="MSG1" text="sCoin(|{param1|=DIME|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM13" identifier="COND3" background="-" text="PaidTen"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="PaidTen" identifier="COND3" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="#000000" text="sTea" identifier="MSG2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM56" identifier="MSG2" text="sTea"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM57" identifier="MSG3" text="sFillWater()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM63" identifier="MSG4" text="sChange(|{param1|=nickel|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="#000000" text="sChange(|{param1|=nickel|})" identifier="MSG4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM59" identifier="COND4" background="-" text="FillingWater"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="FillingWater" identifier="COND4" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM59"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM6" identifier="MSG3" text="sFillWater()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM24" identifier="MSG5" text="sWaterOk()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM25" identifier="COND5" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND5" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM25"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM20" identifier="MSG5" text="sWaterOk()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM46" identifier="MSG6" text="sHeatWater()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM47" identifier="COND6" background="-" text="Warming"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Warming" identifier="COND6" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM47"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM7" identifier="MSG6" text="sHeatWater()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="#ffffff" text="Heater(10)" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM10"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM13" identifier="COND7" background="-" text="Warming"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Warming" identifier="COND7" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="#ffffff" text="Heater" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM19" identifier="MSG7" text="sWarm()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM22" identifier="COND8" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND8" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\phardware1.rdd*SYM22"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM28" identifier="MSG7" text="sWarm()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM53" identifier="MSG8" text="sCupOfTea()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="#000000" text="sCupOfTea()" identifier="MSG8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM55" identifier="COND9" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND9" model_id="PragmaDevStudio:symbol*c:\users\mario\desktop\coffeemiot_pragma\pcontroller1.rdd*SYM55"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+</MscDiagram>

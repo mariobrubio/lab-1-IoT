@@ -1,0 +1,23 @@
+Ä}q(UversionqU5.2.1qUobjectq]q((cpragmadev.main.business.l111llll1ll1l_opy_
+l1111ll11ll11ll_opy_
+qoq}q(Utextq	U0CoinValues LITERALS NICKEL , DIME ; ENDNEWTYPE ;q
+U
+identifierqU1:8qUtypeqUtypedeclqUchildrenq]q((hoq}q(h	U
+CoinValuesqhU1:8qhUtypenameqh]qU(_l1111ll11ll11ll_opy___1111111lll11_opy_q(hoq}q(h	h
+hhhhhhhhubub(hoq}q(h	UNICKEL , DIME ;qhU2:9qhUliteralsdeclqh]q((hoq }q!(h	UNICKELq"hU2:9q#hUliteraldeclq$h]q%(hoq&}q'(h	UNICKELq(hU2:9q)hUliteralnameq*h]q+hh ubahhub(hoq,}q-(h	UDIMEq.hU2:17q/hUliteraldeclq0h]q1(hoq2}q3(h	UDIMEq4hU2:17q5hUliteralnameq6h]q7hh,ubahhubehhubeh(hoq8}q9(h	UÙ/*NICKEL=5 cents; DIME=10 cents*/
+NEWTYPE CoinValues
+  LITERALS NICKEL, DIME;
+ENDNEWTYPE;
+
+NEWTYPE Products
+  LITERALS COFFEE, TEA;
+ENDNEWTYPE;
+
+NEWTYPE CoffeeMachine
+  STRUCT
+    IDCM NATURAL;
+    SELL  NATURAL;
+    SPENT NATURAL;
+ENDNEWTYPE;
+q:hNhUdatadeclq;h]q<(h(hoq=}q>(h	U-Products LITERALS COFFEE , TEA ; ENDNEWTYPE ;q?hU5:8q@hUtypedeclqAh]qB((hoqC}qD(h	UProductsqEhU5:8qFhUtypenameqGh]qHh(hoqI}qJ(h	h?hh@hhAhhBhh=ubub(hoqK}qL(h	UCOFFEE , TEA ;qMhU6:9qNhUliteralsdeclqOh]qP((hoqQ}qR(h	UCOFFEEqShU6:9qThUliteraldeclqUh]qV(hoqW}qX(h	UCOFFEEqYhU6:9qZhUliteralnameq[h]q\hhQubahhKub(hoq]}q^(h	UTEAq_hU6:17q`hUliteraldeclqah]qb(hoqc}qd(h	UTEAqehU6:17qfhUliteralnameqgh]qhhh]ubahhKubehhIubehh8ub(hoqi}qj(h	UOCoffeeMachine STRUCT IDCM NATURAL ; SELL NATURAL ; SPENT NATURAL ; ENDNEWTYPE ;qkhU9:8qlhUtypedeclqmh]qn((hoqo}qp(h	UCoffeeMachineqqhU9:8qrhUtypenameqsh]qth(hoqu}qv(h	hkhhlhhmhhnhhiubub(hoqw}qx(h	U-IDCM NATURAL ; SELL NATURAL ; SPENT NATURAL ;qyhU11:0qzhU
+structtypeq{h]q|((hoq}}q~(h	UIDCM NATURAL ;qhU11:0qÄhUflddefqÅh]qÇ((hoqÉ}qÑ(h	UIDCMqÖhU11:0qÜhUfldnameqáh]qàhh}ub(hoqâ}qä(h	UNATURALqãhU11:5qåhUfldtypeqçh]qé(hoqè}qê(h	UNATURALqëhU11:5qíhUtypenameqìh]qîhhâubahh}ubehhwub(hoqï}qñ(h	USELL NATURAL ;qóhU12:0qòhUflddefqôh]qö((hoqõ}qú(h	USELLqùhU12:0qûhUfldnameqüh]q†hhïub(hoq°}q¢(h	UNATURALq£hU12:6q§hUfldtypeq•h]q¶(hoqß}q®(h	UNATURALq©hU12:6q™hUtypenameq´h]q¨hh°ubahhïubehhwub(hoq≠}qÆ(h	USPENT NATURAL ;qØhU13:0q∞hUflddefq±h]q≤((hoq≥}q¥(h	USPENTqµhU13:0q∂hUfldnameq∑h]q∏hh≠ub(hoqπ}q∫(h	UNATURALqªhU13:6qºhUfldtypeqΩh]qæ(hoqø}q¿(h	UNATURALq¡hU13:6q¬hUtypenameq√h]qƒhhπubahh≠ubehhwubehhuubehh8ubehNububh=hieu.
